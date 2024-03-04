@@ -1,6 +1,6 @@
 ### TPC 3
 
-No âmbito do TPC 3 foram desenvolvidos dois pontos principais propsotos pelo docente:
+No âmbito do TPC 3 foram desenvolvidos dois pontos principais propostos pelo docente:
 
 1. Familiarização com o HTML bem como explorar funcionalidades;
 2. Melhor estruturação das expressões regulares para lidar com alguns problemas identificados na aula.
@@ -16,7 +16,7 @@ A estrutura do HTML inclui:
 
 - Container Principal: Todo o conteúdo é envolvido em um container principal. Este passo tem como objetivo centralizar e limitar a largura máxima do conteúdo para melhor legibilidade.
 
-- Designações e descrições: Cada termo médico e sua descrição são inseridos na página. A designação é exibida em negrito e seguida pela descrição. Antes de cada designação, é colocado um caractere especial (um círculo preenchido), que é estilizado usando o CSS para dar destaque visual.
+- Designações e descrições: Cada termo médico e sua descrição são inseridos na página. A designação é exibida em negrito e seguida pela descrição. Antes de cada designação, é colocado um caracter especial (um círculo preenchido), que é estilizado usando o CSS para dar destaque visual.
 
 - Estilo CSS: O arquivo CSS é vinculado ao HTML para aplicar estilos visuais à página. Isso inclui formatação de texto, cores de fundo, espaçamento e outros estilos para tornar a página mais atraente e legível.
 
@@ -40,10 +40,11 @@ Para a situação 3, substituiu-se o \f por uma string vazia, algo já realizado
 
 Nota: Para a situação 2, a regex desenvolvida pode ainda não cumprir a 100% de todos os casos possíveis, nomeadamente, se a segunda frase que foi separada na descrição começar por letra maiúscula.
 
-Por fim a expressão regular para a captação dos termos (tuplo designação, descrição) foi aprimorada para abregar mais casos. A título de exemplo:
+Por fim a expressão regular para a captação dos termos (tuplo designação, descrição) foi aprimorada para albergar mais casos. A título de exemplo:
 
-@análise didática
+"@análise didática
+
 Análise que todo psiquiatra candidato a psicanalista deve submeter-se para se tornar membro da sociedade psicanalítica e poder praticar a especialidade. Exigência introduzida em 1922, tem por finalidade instruir o futuro
-psicanalista e corrigir, eventualm
+psicanalista e corrigir, eventualm"
 
 Nesta situação, após futuro existe um \n, no entanto, a frase seguinte ainda pertence a este termo. Assim foi usado o @ da próxima designação para captar corretamente todo o texto.
