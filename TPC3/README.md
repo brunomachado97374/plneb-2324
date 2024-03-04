@@ -14,7 +14,7 @@ A estrutura do HTML inclui:
 
 - Uma seção introdutória que fornece uma breve descrição do dicionário médico e sua finalidade. É inserido no HTML como um parágrafo.
 
-- Container Principal: Todo o conteúdo é envolvido em um container principal (<div class="container">). Este passo tem como objetivo centralizar e limitar a largura máxima do conteúdo para melhor legibilidade.
+- Container Principal: Todo o conteúdo é envolvido em um container principal. Este passo tem como objetivo centralizar e limitar a largura máxima do conteúdo para melhor legibilidade.
 
 - Designações e descrições: Cada termo médico e sua descrição são inseridos na página. A designação é exibida em negrito e seguida pela descrição. Antes de cada designação, é colocado um caractere especial (um círculo preenchido), que é estilizado usando o CSS para dar destaque visual.
 
@@ -27,7 +27,7 @@ Abordando agora o ponto 2, durante a análise do ficheiro .pdf e a sua posterior
 
 anactesia
 
-Recuperação; convalescença.
+\fRecuperação; convalescença.
 
 
 - Situação 2: Devido à quebra de página, a descrição é separada em duas partes no ficheiro:
@@ -35,12 +35,12 @@ anactesia
 análise didática
 Análise que todo psiquiatra candidato a psicanalista deve submeter-se para se tornar membro da sociedade
 
-psicanalítica e poder praticar a especialidade. Exigência introduzida em 1922, tem por finalidade instruir o futuro
+\fpsicanalítica e poder praticar a especialidade. Exigência introduzida em 1922, tem por finalidade instruir o futuro
 psicanalista e corrigir, eventualm
 
 - Situação 3: O indicador de quebra de página aparece antes da designação (caso que não corresponde a uma exceção):
 
-amplificador
+\famplificador
 Aparelho destinado a aumentar a tensão, intensidade ou potência de sinais elétricos.
 
 Desta forma, cada um destes casos foi tratado de forma individual, realizando uma expressão regular para cada situação. Sucintamente, Na situação 1, realiza-se a captura do grupo 1 (designação) que é seguido de dois ou mais \n e um \f e posteriormente é capturado o segundo grupo (primeira letra da descrição que é maiúscula). Entre os grupos de captura é colocado um \n.
