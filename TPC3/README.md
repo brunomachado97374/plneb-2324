@@ -12,7 +12,7 @@ A estrutura do HTML inclui:
 
 - Uma barra na parte superior da página com o título "Dicionário Médico". Esta estutura é representada usando o ficheiro "syle.css" para ter uma cor de fundo específica e texto em branco.
 
-- Uma seção introdutória que fornece uma breve descrição do dicionário médico e sua finalidade. É inserido no HTML como um parágrafo (<p>).
+- Uma seção introdutória que fornece uma breve descrição do dicionário médico e sua finalidade. É inserido no HTML como um parágrafo.
 
 - Container Principal: Todo o conteúdo é envolvido em um container principal (<div class="container">). Este passo tem como objetivo centralizar e limitar a largura máxima do conteúdo para melhor legibilidade.
 
