@@ -25,21 +25,12 @@ Abordando agora o ponto 2, durante a análise do ficheiro .pdf e a sua posterior
 
 - **Situação 1:** Devido à quebra de página, a designação fica separada da descrição, tendo a estrutura seguinte no ficheiro .txt:
 
-anactesia
-
-"\f"Recuperação; convalescença.
-
 
 - **Situação 2:** Devido à quebra de página, a descrição é separada em duas partes no ficheiro:
 
-análise didática                                                                                                                       Análise que todo psiquiatra candidato a psicanalista deve submeter-se para se tornar membro da sociedade
-
-"\f"psicanalítica e poder praticar a especialidade. Exigência introduzida em 1922, tem por finalidade instruir o futuro
-psicanalista e corrigir, eventualm
 
 - **Situação 3:** O indicador de quebra de página aparece antes da designação (caso que não corresponde a uma exceção):
 
-"\f"amplificador                                                                                                                       Aparelho destinado a aumentar a tensão, intensidade ou potência de sinais elétricos.
 
 Desta forma, cada um destes casos foi tratado de forma individual, realizando uma expressão regular para cada situação. Sucintamente, Na situação 1, realiza-se a captura do grupo 1 (designação) que é seguido de dois ou mais \n e um \f e posteriormente é capturado o segundo grupo (primeira letra da descrição que é maiúscula). Entre os grupos de captura é colocado um \n.
 
