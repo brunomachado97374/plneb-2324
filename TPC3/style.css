@@ -1,0 +1,69 @@
+body {
+    background-color: #f8f8f8;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+    color: #007bff;
+    text-align: center;
+}
+
+p {
+    line-height: 1.6;
+}
+
+
+hr {
+    border: none;
+    border-top: 1px solid #ccc;
+}
+
+a {
+    color: #d5d7da;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo para a barra superior */
+.barra-superior {
+    background-color: #007bff; /* Cor da barra */
+    color: #fff; /* Cor do texto */
+    padding: 16px; /* Espaçamento interno */
+    text-align: center; /* Alinhamento do texto */
+}
+
+/* Estilo para o título dentro da barra */
+.barra-superior h1 {
+    margin: 0; /* Remover margem padrão */
+}
+
+/* Estilo para as designações em negrito e maior */
+.designacao {
+    font-weight: bold; /* Negrito */
+    font-size: 1.3em; /* Tamanho da fonte maior (1.2 vezes o tamanho padrão) */
+}
+
+/* Estilo para o caractere especial antes das designações */
+.caractere-especial {
+    margin-right: 5px; /* Espaço entre o caractere especial e o texto da designação */
+    color: #007bff; /* Cor do caractere especial (opcional) */
+}
+
+.texto_int {
+    margin: 20px;
+    font-size: 1.1em;
+    text-align: justify;
+}
