@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="estilos.css"> <!-- Adicionando o link para o arquivo CSS -->
+</head>
+
+<body>
+    <!-- Barra Superior -->
+    <header>
+        <nav class="left">
+            <ul>
+                <li><a href="#intro"><span class="logo-text">Bruno Machado</span></a></li>
+            </ul>
+        </nav>
+
+        <nav class="right">
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#educacao">Academic Career</a></li>
+                <li><a href="#associativismo">Associativism</a></li>
+                <li><a href="#desporto">Sports</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- Conteúdo da Página -->
+
+    <!-- Seção Inicial -->
+    <section class="about-me" , id="intro">
+        <div class="overlay">
+            <h2>Let's talk about a programmer wannabe.</h2>
+        </div>
+    </section>
+
+
+
+    <!-- Container para secções de texto -->
+    <div class="text-container">
+
+        <!-- Seção Introdução -->
+
+        <!-- Seção Introdução -->
+        <section class="section intro" id="about">
+            <div class="description-wrapper">
+                <h2>About Me</h2>
+                <div class="description">
+                    <p>Hi, I'm Bruno and I'm currently studying for a master's degree in Medical Informatics at the
+                        University of Minho.</p>
+                    <p>Besides that, I'm addicted to getting involved in things I don't have enough time for. Find out a
+                        bit
+                        more below.</p>
+                </div>
+            </div>
+            <div class="img-wrapper">
+                <img src="./capa_site.jpg"></img>
+            </div>
+        </section>
+
+        <!-- Seção Percurso Académico -->
+        <section class="section education" id="educacao">
+
+            <div class="slideshow-container">
+                <div class="mySlides">
+                    <img src="./uni_image.jpeg" style="width:75%">
+                </div>
+        
+                <div class="mySlides">
+                    <img src="./uni_image2.jpeg" style="width:75%">
+                </div>
+        
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+
+
+            <div class="description-wrapper">
+                <h2>Academic Career</h2>
+                <ul>
+                    <li>
+                        <img src="./icon_uni.png"></img>
+                        2023-2025: Master's in Medical Informatics
+                    </li>
+                    <li>
+                        <img src="./icon_uni.png"></img>
+                        2020-2023: Biomedical Engineering Degree
+                    </li>
+                    <li>
+                        <img src="./icon_uni.png"></img>
+                        2017-2020: Dona Maria II High School
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Seção Associativismo -->
+        <section class="section associativism" id="associativismo">
+        
+            <div class="description-wrapper">
+                <h2>Associativism</h2>
+                <ul>
+                    <li>
+                        <img src="./icon_uni.png"></img>
+                        2023-2024: GAEB - Vice-President of the Board
+                    </li>
+                    <li>
+                        <img src="./icon_uni.png"></img>
+                        2022-2023: GAEB - Board Secretary
+                    </li>
+                    <li>
+                        <img src="./icon_uni.png"></img>
+                        2021-2022: GAEB - Member of the Pedagogic Department
+                    </li>
+                </ul>
+            </div>
+            <div class="img-wrapper">
+                <img src="./gaeb.JPG"></img>
+            </div>
+        </section>
+
+        <!-- Seção Desporto -->
+        
+        <section class="section sports" id="desporto">
+
+
+            <div class="slideshow-container-sports">
+                <div class="mySlides-sports">
+                    <img src="./arsenal.jpeg" style="width:75%">
+                </div>
+        
+                <div class="mySlides-sports">
+                    <img src="./abc.jpeg" style="width:68%">
+                </div>
+        
+                <!-- Next and previous buttons -->
+                <a class="prev-sports" onclick="plusSlides1(-1)">&#10094;</a>
+                <a class="next-sports" onclick="plusSlides1(1)">&#10095;</a>
+            </div>
+
+            <div class="description-wrapper">
+                <h2>Sports</h2>
+                <ul>
+                    <li>
+                        <img src="./icon_sport.png"></img>
+                        2023-2024: Handball Player at AC Devesa
+                    </li>
+                    <li>
+                        <img src="./icon_sport.png"></img>
+                        2023-2024: Handball Player at AAUM Team
+                    </li>
+                    <li>
+                        <img src="./icon_sport.png"></img>
+                        2014-2021: Handball Player at ABC Braga
+                    </li>
+                </ul>
+            </div>
+        </section> 
+    </div>
+
+
+    <footer>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/brunogmachado/" target="_blank"><img
+                    src="C:\Users\bruno\OneDrive\Ambiente de Trabalho\icone_linkedin.png" alt="LinkedIn"></a>
+            <a href="https://github.com/brunomachado97374" target="_blank"><img
+                    src="C:\Users\bruno\OneDrive\Ambiente de Trabalho\icone_github.png" alt="GitHub"></a>
+            <a href="mailto:brunomgm2015@gmail.com"><img
+                    src="C:\Users\bruno\OneDrive\Ambiente de Trabalho\icone_mail.png" alt="Email"></a>
+        </div>
+        <div class="personal-info">
+            <p>Bruno Machado - About Me</p>
+        </div>
+    </footer>
+
+    <!-- Referência para o arquivo JavaScript -->
+    <script src="./script.js"></script>
+    <script src="./script1.js"></script>
+</body>
+
+</html>

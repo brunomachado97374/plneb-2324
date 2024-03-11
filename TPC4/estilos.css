@@ -1,0 +1,481 @@
+/* Reset CSS básico para remover margens e preenchimentos padrão */
+body, h1, h2, h3, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f8f8;
+}
+
+
+header {
+    background-color: #000000;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; /* Define a largura do cabeçalho para 100% */
+    z-index: 999; /* Garante que o cabeçalho fique acima de outros elementos */
+    position: fixed;
+}
+
+header .left {
+    display: flex;
+}
+
+header .left ul {
+    list-style: none;
+}
+
+header .left ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+header .left ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+header .left ul li a:hover {
+    color: #645c5c;
+}
+
+.logo-text {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+header .right {
+    margin-left: auto;
+}
+
+header .right a {
+    font-weight: bold;
+    padding-left: 10px; 
+    padding-right: 20px;
+}
+
+
+header h1 {
+    margin-left: 10px;
+}
+
+header nav ul {
+    list-style: none;
+    margin-right: 20px;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+header  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+
+.content {
+    padding: 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    margin: 0; /* Remova todas as margens */
+    padding: 0; /* Remova todo o preenchimento */
+}
+
+h2 {
+    color: #333;
+}
+
+p {
+    color: #555;
+}
+
+footer {
+    background-color: #fff;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center; /* Centraliza o conteúdo */
+    width: 100%; /* Largura total */
+}
+
+.social-icons img {
+    width: 30px; /* Tamanho dos ícones */
+    margin: 0 10px; /* Espaçamento entre os ícones */
+}
+
+.personal-info p {
+    margin-top: 10px; /* Espaço entre os ícones e as informações pessoais */
+}
+
+
+
+.section-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-container {
+    flex: 2; /* Ocupa 2/3 do espaço disponível */
+    text-align: center;
+}
+
+.section h2 {
+    text-align: center; /* Centraliza o conteúdo */
+    font-size: 40px;
+   
+}
+
+/* Capa */
+
+.about-me {
+    background-image: url("./capa_site3.jpg"); /* Substitua 'caminho/para/sua/imagem.jpg' pelo caminho da sua imagem */
+    background-size: cover; /* Garante que a imagem de fundo cubra toda a área */
+    background-position: center; /* Centraliza a imagem de fundo */
+    height: 100vh; /* Define a altura para ocupar toda a altura da tela */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white; /* Adiciona cor branca ao texto */
+    padding: 20px; /* Adiciona espaço interno */
+}
+
+.about-me .overlay {
+    position: absolute; 
+    top: 80%; 
+    transform: translateY(-50%); 
+    width: 100%; 
+    padding: 20px; 
+    box-sizing: border-box; /* Garante que o padding não aumente o tamanho do elemento */
+}
+.about-me h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: white; 
+    font-family: Arial, sans-serif; 
+    font-size: 40px; 
+}
+
+.about-me p {
+    font-size: 1.5em;
+}
+
+
+/* Intro */
+
+.intro {
+    height: 400px;
+    display: flex;
+}
+
+.intro > div {
+    flex:1;
+}
+
+.intro .description-wrapper {
+    margin: 90px 100px;
+}
+
+.intro .img-wrapper {
+    margin: 40px;
+}
+
+.intro h2 {
+    text-align: left; /* Alinhar o texto à esquerda */
+}
+
+.intro .description {
+    width: 500px;
+    margin-top: 20px;
+}
+
+.intro .description p {
+    text-align: left; /* Alinhar o texto à esquerda */
+    font-size: 20px;
+}
+
+.intro img {
+    height: 320px;
+    width: 320px;
+}
+
+/* Education */
+
+.education {
+    height: 500px;
+    display: flex;
+    background-color: #55555549;
+}
+
+.education > div {
+    flex:1;
+}
+
+.education .description-wrapper {
+    margin: 125px 100px;
+}
+
+.education .img-wrapper {
+    margin: 75px;
+}
+
+.education h2 {
+    text-align: left; /* Alinhar o texto à esquerda */
+}
+
+.education .description {
+    width: 500px;
+    margin-top: 20px;
+}
+
+.education ul{
+    list-style: none;
+    margin-top: 10px;
+}
+
+.education ul li{
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
+
+.education ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.education ul li img{
+    height: 25px;
+    width: 25px;
+    margin-right: 10px;
+}
+
+.education .img-wrapper img {
+    height: 250px;
+    width: 250px;
+    border-radius: 15px; /* Adiciona bordas arredondadas */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Adiciona uma sombra */
+}
+
+/* Associativismo */
+
+
+.associativism {
+    height: 450px;
+    display: flex;
+    background-color: #fff;
+}
+
+.associativism > div {
+    flex:1;
+}
+
+.associativism .description-wrapper {
+    margin: 135px 100px;
+}
+
+.associativism .img-wrapper {
+    margin: 60px;
+}
+
+.associativism h2 {
+    text-align: left; /* Alinhar o texto à esquerda */
+}
+
+.associativism .description {
+    width: 500px;
+    margin-top: 20px;
+}
+
+.associativism ul{
+    list-style: none;
+    margin-top: 10px;
+}
+
+.associativism ul li{
+    display: flex;
+    align-items: center;
+    font-size: 20px;   
+}
+
+.associativism ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.associativism ul li img{
+    height: 25px;
+    width: 25px;
+    margin-right: 10px;
+}
+
+.associativism .img-wrapper img {
+
+    width: 75%;
+}
+
+
+
+/* Desporto */
+
+/* Education */
+
+.sports {
+    height: 450px;
+    display: flex;
+    background-color: #55555549;
+}
+
+.sports > div {
+    flex:1;
+}
+
+.sports .description-wrapper {
+    margin: 80px 100px;
+}
+
+.sports .img-wrapper {
+    margin: 75px;
+}
+
+.sports h2 {
+    text-align: left; /* Alinhar o texto à esquerda */
+}
+
+.sports .description {
+    width: 500px;
+    margin-top: 20px;
+}
+
+.sports ul{
+    list-style: none;
+    margin-top: 10px;
+}
+
+.sports ul li{
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
+
+.sports ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.sports ul li img{
+    height: 45px;
+    width: 55px;
+    margin-right: 10px;
+}
+
+.sports .img-wrapper img {
+
+    width: 75%;
+
+}
+
+
+/* Carrossel Images Education */
+
+.slideshow-container {
+    position: relative;
+    max-width: 50%;
+    margin: auto;
+}
+
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+
+/* Carrossel Images Sports */
+
+.slideshow-container-sports {
+    position: relative;
+    max-width: 50%;
+    margin: auto;
+}
+
+.mySlides-sports {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev-sports, .next-sports {
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+}
+
+/* Position the "next button" to the right */
+.next-sports {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev-sports:hover, .next-sports:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text-sports {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
