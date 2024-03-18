@@ -1,0 +1,10 @@
+# TPC5
+## *Objetivo*: Criar um site do dicionário médico com etiquetas para conceitos especiais.
+
+Na primeira etapa, foi feita a leitura dos ficheiros (json e txt) em utf-8 para ler os caracteres especiais. Após a leitura destes ficheiros, foi criado um dicionário com os conceitos presentes no documento json, onde as chaves são os conceitos e os valores são as descrições associadas às chaves.
+
+É importante notar que foi necessário criar uma *lista negra* para evitar que algumas palavras presentes no dicionário de conceitos fossem confundidas com preposições encontradas no decorrer do texto.
+
+Em seguida, os termos portugueses e os termos ingleses foram separados no documento de termos traduzidos, sendo separados por um "@". Após essa separação, foram criadas etiquetas para serem adicionadas ao HTML. É importante destacar que apenas foram criadas etiquetas para palavras presentes nos conceitos e no dicionário de termos traduzidos (para evitar erros de chaves inexistentes) e que não estão presentes na lista negra.
+
+Também foi importante remover as tags "<br>" existentes nas descrições, uma vez que essas tags servem como quebra de linha no documento HTML, mas não nas descrições.
