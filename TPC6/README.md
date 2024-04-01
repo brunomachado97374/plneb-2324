@@ -1,0 +1,5 @@
+## TPC 6
+
+No seguimento do trabalho desenvolvido com a ferramenta Flask e o Bootstrap utilizados na aula anterior, desenvolveu-se uma página para cada conceito presente na nossa base de dados para apresentação das suas respetivas informações. Dessa forma, foi criado um documento html ("designacoes.html") para definir a estrutura da informação. Além disso, foi desenvolvido a opção para editar os conceitos dentro da mesma página, permitindo a urilização desta funcionalidade com maior rapidez e fluidez. É então criado um forms onde é possível alterar a descrição e a designação em inglês de cada termo. Salienta-se que, para maior facilidade do utilizador, é colocada a informação nos campos das alterações para que o utilizador não tenha de reescrever toda a informação, caso a alteração seja pequena. 
+
+Para a realização da alteração, foi importada a funçãoo request do Flask. Após a realização da alteração, o cliente visualiza a mesma página já com as alterações feitas. Por fim foram realizadas algumas mudanças estéticas para tornar a interação com o utilizador mais simples visualmente.

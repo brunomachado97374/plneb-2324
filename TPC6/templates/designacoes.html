@@ -1,0 +1,35 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+<div class="container">
+    <div class="card mt-5">
+        <div class="card-header text-center">
+            <h2 class="card-title">{{ desi }}</h2>
+        </div>
+        <div class="card-body">
+            <p class="card-text"><strong>Descrição:</strong> {{ conceito_desi.desc }}</p>
+            <p class="card-text"><strong>Designação EN:</strong> {{ conceito_desi.en }}</p>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="card mt-5">
+        <div class="card-header text-center">
+            <h2 class="card-title">Editar Conceito</h2>
+        </div>
+        <div class="card-body">
+            <form id="editarConceitoForm" action="/conceitos/{{ desi }}" method="POST">
+                <input type="hidden" name="_method" value="PUT">
+                <label for="desc">Nova Descrição:</label><br>
+                <textarea id="desc" name="desc" rows="4" cols="50">{{ conceito_desi.desc }}</textarea><br>
+                <label for="en">Nova Designação EN:</label><br>
+                <input type="text" id="en" name="en" value="{{ conceito_desi.en }}"><br><br>
+                <button type="submit">Salvar Alterações</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
